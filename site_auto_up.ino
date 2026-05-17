@@ -55,6 +55,25 @@ void setup() {
   slowPrint("python main.py", 50);
   delay(500);
   bleKeyboard.write(KEY_RETURN);
+
+  bleKeyboard.press(KEY_LEFT_GUI);
+  bleKeyboard.press('r');
+  delay(200);
+  bleKeyboard.releaseAll();
+  delay(1000);  
+    slowPrint("cmd", 80);
+  delay(500);
+  bleKeyboard.write(KEY_RETURN);
+  delay(2000);  
+    slowPrint("cd /d C:\\Users\\Admin\\PycharmProjects\\mthwb", 50);
+  delay(500);
+  bleKeyboard.write(KEY_RETURN);
+  delay(1500);
+    slowPrint("tuna http 8080", 50);
+  delay(500);
+  bleKeyboard.write(KEY_RETURN);
+  delay(1500);
+
 }
 
 void loop() {}
